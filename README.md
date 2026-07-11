@@ -1,1 +1,0 @@
-# rinz-global-landing
