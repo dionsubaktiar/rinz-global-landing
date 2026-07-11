@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rinsgloballogistics.co.id/sitemap.xml
+Sitemap: https://rinsgloballogistic.com/sitemap.xml
