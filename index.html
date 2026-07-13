@@ -131,14 +131,51 @@
 
         <!-- Action Button -->
         <div class="hidden md:block">
-          <a
-            href="https://wa.me/6281331347721?text=Halo%20PT%20Rins%20Global%20Logistics,%20saya%20ingin%20konsultasi%20pengiriman."
-            target="_blank"
-            class="bg-rgl-orange hover:bg-rgl-orangehover text-white text-xs font-bold px-5 py-3 rounded-lg shadow-lg shadow-orange-500/10 hover:shadow-orange-500/20 transition-all duration-300 transform hover:-translate-y-0.5"
-            id="nav-cta-button"
-          >
-            Hubungi WhatsApp
-          </a>
+          <!-- Dropdown Hubungi Nav Desktop -->
+          <div class="relative" id="nav-dropdown-wrapper">
+            <button
+              id="nav-cta-button"
+              onclick="toggleDropdown('nav-dropdown')"
+              class="inline-flex items-center gap-2 bg-rgl-orange hover:bg-rgl-orangehover text-white text-xs font-bold px-5 py-3 rounded-lg shadow-lg shadow-orange-500/10 hover:shadow-orange-500/20 transition-all duration-300 transform hover:-translate-y-0.5"
+            >
+              <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.063 5.219 5.284.002 11.693.002c3.107 0 6.027 1.213 8.22 3.414 2.194 2.2 3.402 5.122 3.4 8.231-.005 6.466-5.226 11.684-11.636 11.684-2.002-.001-3.973-.518-5.717-1.502L0 24zm6.208-3.79c1.61 1.002 3.197 1.547 4.92 1.549 5.378 0 9.756-4.375 9.76-9.75.002-2.584-1.002-5.01-2.829-6.837C16.291 3.344 13.883 2.341 11.7 2.341 6.327 2.341 1.954 6.716 1.95 12.09c-.001 1.776.471 3.4 1.368 4.974l-1.037 3.79 3.984-1.033zm11.303-7.093c-.3-.149-1.786-.881-2.067-.981-.28-.102-.485-.149-.69.15-.205.299-.79.981-.969 1.18-.179.198-.359.223-.659.074-.3-.149-1.265-.466-2.41-1.487-.89-.793-1.49-1.772-1.664-2.07-.174-.3-.019-.462.13-.61.135-.133.3-.349.45-.523.15-.174.2-.299.3-.499.1-.201.05-.375-.025-.524-.075-.15-.69-1.662-.947-2.285-.25-.601-.504-.519-.69-.529-.179-.008-.385-.01-.59-.01-.206 0-.54.076-.822.384-.282.309-1.077 1.051-1.077 2.563 0 1.512 1.099 2.977 1.248 3.176.15.199 2.164 3.302 5.242 4.63.733.317 1.304.507 1.751.65.736.233 1.408.2 1.94.12.592-.089 1.786-.73 2.037-1.436.25-.706.25-1.312.174-1.436-.075-.124-.28-.198-.58-.348z"/></svg>
+              Hubungi Kami
+              <svg class="h-3 w-3 transition-transform duration-200" id="nav-dropdown-chevron" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div id="nav-dropdown" class="hidden absolute right-0 mt-2 w-64 bg-white rounded-xl shadow-2xl border border-slate-100 overflow-hidden z-50">
+              <div class="px-4 py-2 bg-slate-50 border-b border-slate-100">
+                <p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Pilih Nomor Kontak</p>
+              </div>
+              <a href="https://wa.me/6282199994045?text=Halo%20PT%20Rins%20Global%20Logistics,%20saya%20ingin%20konsultasi%20pengiriman." target="_blank" class="flex items-center gap-3 px-4 py-3 hover:bg-orange-50 transition-colors group border-b border-slate-50">
+                <span class="flex-shrink-0 w-7 h-7 rounded-full bg-green-100 flex items-center justify-center"><svg class="h-3.5 w-3.5 fill-green-600" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.063 5.219 5.284.002 11.693.002c3.107 0 6.027 1.213 8.22 3.414 2.194 2.2 3.402 5.122 3.4 8.231-.005 6.466-5.226 11.684-11.636 11.684-2.002-.001-3.973-.518-5.717-1.502L0 24zm6.208-3.79c1.61 1.002 3.197 1.547 4.92 1.549 5.378 0 9.756-4.375 9.76-9.75.002-2.584-1.002-5.01-2.829-6.837C16.291 3.344 13.883 2.341 11.7 2.341 6.327 2.341 1.954 6.716 1.95 12.09c-.001 1.776.471 3.4 1.368 4.974l-1.037 3.79 3.984-1.033zm11.303-7.093c-.3-.149-1.786-.881-2.067-.981-.28-.102-.485-.149-.69.15-.205.299-.79.981-.969 1.18-.179.198-.359.223-.659.074-.3-.149-1.265-.466-2.41-1.487-.89-.793-1.49-1.772-1.664-2.07-.174-.3-.019-.462.13-.61.135-.133.3-.349.45-.523.15-.174.2-.299.3-.499.1-.201.05-.375-.025-.524-.075-.15-.69-1.662-.947-2.285-.25-.601-.504-.519-.69-.529-.179-.008-.385-.01-.59-.01-.206 0-.54.076-.822.384-.282.309-1.077 1.051-1.077 2.563 0 1.512 1.099 2.977 1.248 3.176.15.199 2.164 3.302 5.242 4.63.733.317 1.304.507 1.751.65.736.233 1.408.2 1.94.12.592-.089 1.786-.73 2.037-1.436.25-.706.25-1.312.174-1.436-.075-.124-.28-.198-.58-.348z"/></svg></span>
+                <div>
+                  <p class="text-xs font-bold text-slate-700 group-hover:text-rgl-orange transition-colors">0821-9999-4045</p>
+                  <p class="text-[10px] text-slate-400">WhatsApp</p>
+                </div>
+              </a>
+              <a href="https://wa.me/6281325522323?text=Halo%20PT%20Rins%20Global%20Logistics,%20saya%20ingin%20konsultasi%20pengiriman." target="_blank" class="flex items-center gap-3 px-4 py-3 hover:bg-orange-50 transition-colors group border-b border-slate-50">
+                <span class="flex-shrink-0 w-7 h-7 rounded-full bg-green-100 flex items-center justify-center"><svg class="h-3.5 w-3.5 fill-green-600" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.063 5.219 5.284.002 11.693.002c3.107 0 6.027 1.213 8.22 3.414 2.194 2.2 3.402 5.122 3.4 8.231-.005 6.466-5.226 11.684-11.636 11.684-2.002-.001-3.973-.518-5.717-1.502L0 24zm6.208-3.79c1.61 1.002 3.197 1.547 4.92 1.549 5.378 0 9.756-4.375 9.76-9.75.002-2.584-1.002-5.01-2.829-6.837C16.291 3.344 13.883 2.341 11.7 2.341 6.327 2.341 1.954 6.716 1.95 12.09c-.001 1.776.471 3.4 1.368 4.974l-1.037 3.79 3.984-1.033zm11.303-7.093c-.3-.149-1.786-.881-2.067-.981-.28-.102-.485-.149-.69.15-.205.299-.79.981-.969 1.18-.179.198-.359.223-.659.074-.3-.149-1.265-.466-2.41-1.487-.89-.793-1.49-1.772-1.664-2.07-.174-.3-.019-.462.13-.61.135-.133.3-.349.45-.523.15-.174.2-.299.3-.499.1-.201.05-.375-.025-.524-.075-.15-.69-1.662-.947-2.285-.25-.601-.504-.519-.69-.529-.179-.008-.385-.01-.59-.01-.206 0-.54.076-.822.384-.282.309-1.077 1.051-1.077 2.563 0 1.512 1.099 2.977 1.248 3.176.15.199 2.164 3.302 5.242 4.63.733.317 1.304.507 1.751.65.736.233 1.408.2 1.94.12.592-.089 1.786-.73 2.037-1.436.25-.706.25-1.312.174-1.436-.075-.124-.28-.198-.58-.348z"/></svg></span>
+                <div>
+                  <p class="text-xs font-bold text-slate-700 group-hover:text-rgl-orange transition-colors">0813-2552-2323</p>
+                  <p class="text-[10px] text-slate-400">WhatsApp</p>
+                </div>
+              </a>
+              <a href="https://wa.me/6281331347721?text=Halo%20PT%20Rins%20Global%20Logistics,%20saya%20ingin%20konsultasi%20pengiriman." target="_blank" class="flex items-center gap-3 px-4 py-3 hover:bg-orange-50 transition-colors group border-b border-slate-50">
+                <span class="flex-shrink-0 w-7 h-7 rounded-full bg-green-100 flex items-center justify-center"><svg class="h-3.5 w-3.5 fill-green-600" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.063 5.219 5.284.002 11.693.002c3.107 0 6.027 1.213 8.22 3.414 2.194 2.2 3.402 5.122 3.4 8.231-.005 6.466-5.226 11.684-11.636 11.684-2.002-.001-3.973-.518-5.717-1.502L0 24zm6.208-3.79c1.61 1.002 3.197 1.547 4.92 1.549 5.378 0 9.756-4.375 9.76-9.75.002-2.584-1.002-5.01-2.829-6.837C16.291 3.344 13.883 2.341 11.7 2.341 6.327 2.341 1.954 6.716 1.95 12.09c-.001 1.776.471 3.4 1.368 4.974l-1.037 3.79 3.984-1.033zm11.303-7.093c-.3-.149-1.786-.881-2.067-.981-.28-.102-.485-.149-.69.15-.205.299-.79.981-.969 1.18-.179.198-.359.223-.659.074-.3-.149-1.265-.466-2.41-1.487-.89-.793-1.49-1.772-1.664-2.07-.174-.3-.019-.462.13-.61.135-.133.3-.349.45-.523.15-.174.2-.299.3-.499.1-.201.05-.375-.025-.524-.075-.15-.69-1.662-.947-2.285-.25-.601-.504-.519-.69-.529-.179-.008-.385-.01-.59-.01-.206 0-.54.076-.822.384-.282.309-1.077 1.051-1.077 2.563 0 1.512 1.099 2.977 1.248 3.176.15.199 2.164 3.302 5.242 4.63.733.317 1.304.507 1.751.65.736.233 1.408.2 1.94.12.592-.089 1.786-.73 2.037-1.436.25-.706.25-1.312.174-1.436-.075-.124-.28-.198-.58-.348z"/></svg></span>
+                <div>
+                  <p class="text-xs font-bold text-slate-700 group-hover:text-rgl-orange transition-colors">0813-3134-7721</p>
+                  <p class="text-[10px] text-slate-400">WhatsApp</p>
+                </div>
+              </a>
+              <a href="tel:03158288429" class="flex items-center gap-3 px-4 py-3 hover:bg-orange-50 transition-colors group">
+                <span class="flex-shrink-0 w-7 h-7 rounded-full bg-blue-100 flex items-center justify-center"><svg class="h-3.5 w-3.5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg></span>
+                <div>
+                  <p class="text-xs font-bold text-slate-700 group-hover:text-rgl-orange transition-colors">031-58288429</p>
+                  <p class="text-[10px] text-slate-400">Telepon Kantor</p>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
 
         <!-- Mobile Menu Toggle -->
@@ -189,13 +226,26 @@
           class="block text-sm font-semibold text-slate-600 hover:text-rgl-navy"
           >Kontak</a
         >
-        <a
-          href="https://wa.me/6281331347721?text=Halo%20PT%20Rins%20Global%20Logistics,%20saya%20ingin%20konsultasi%20pengiriman."
-          target="_blank"
-          class="block w-full text-center bg-rgl-orange hover:bg-rgl-orangehover text-white text-xs font-bold py-3 rounded-lg shadow"
-        >
-          Hubungi WhatsApp
-        </a>
+        <!-- Dropdown Hubungi Mobile -->
+        <div class="space-y-2" id="mobile-contact-list">
+          <p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider px-1">Pilih Nomor Kontak</p>
+          <a href="https://wa.me/6282199994045?text=Halo%20PT%20Rins%20Global%20Logistics,%20saya%20ingin%20konsultasi%20pengiriman." target="_blank" class="flex items-center gap-3 bg-green-50 border border-green-100 rounded-lg px-4 py-3 hover:bg-green-100 transition-colors">
+            <svg class="h-4 w-4 fill-green-600 flex-shrink-0" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.063 5.219 5.284.002 11.693.002c3.107 0 6.027 1.213 8.22 3.414 2.194 2.2 3.402 5.122 3.4 8.231-.005 6.466-5.226 11.684-11.636 11.684-2.002-.001-3.973-.518-5.717-1.502L0 24zm6.208-3.79c1.61 1.002 3.197 1.547 4.92 1.549 5.378 0 9.756-4.375 9.76-9.75.002-2.584-1.002-5.01-2.829-6.837C16.291 3.344 13.883 2.341 11.7 2.341 6.327 2.341 1.954 6.716 1.95 12.09c-.001 1.776.471 3.4 1.368 4.974l-1.037 3.79 3.984-1.033zm11.303-7.093c-.3-.149-1.786-.881-2.067-.981-.28-.102-.485-.149-.69.15-.205.299-.79.981-.969 1.18-.179.198-.359.223-.659.074-.3-.149-1.265-.466-2.41-1.487-.89-.793-1.49-1.772-1.664-2.07-.174-.3-.019-.462.13-.61.135-.133.3-.349.45-.523.15-.174.2-.299.3-.499.1-.201.05-.375-.025-.524-.075-.15-.69-1.662-.947-2.285-.25-.601-.504-.519-.69-.529-.179-.008-.385-.01-.59-.01-.206 0-.54.076-.822.384-.282.309-1.077 1.051-1.077 2.563 0 1.512 1.099 2.977 1.248 3.176.15.199 2.164 3.302 5.242 4.63.733.317 1.304.507 1.751.65.736.233 1.408.2 1.94.12.592-.089 1.786-.73 2.037-1.436.25-.706.25-1.312.174-1.436-.075-.124-.28-.198-.58-.348z"/></svg>
+            <div><p class="text-xs font-bold text-green-700">0821-9999-4045</p><p class="text-[10px] text-slate-400">WhatsApp</p></div>
+          </a>
+          <a href="https://wa.me/6281325522323?text=Halo%20PT%20Rins%20Global%20Logistics,%20saya%20ingin%20konsultasi%20pengiriman." target="_blank" class="flex items-center gap-3 bg-green-50 border border-green-100 rounded-lg px-4 py-3 hover:bg-green-100 transition-colors">
+            <svg class="h-4 w-4 fill-green-600 flex-shrink-0" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.063 5.219 5.284.002 11.693.002c3.107 0 6.027 1.213 8.22 3.414 2.194 2.2 3.402 5.122 3.4 8.231-.005 6.466-5.226 11.684-11.636 11.684-2.002-.001-3.973-.518-5.717-1.502L0 24zm6.208-3.79c1.61 1.002 3.197 1.547 4.92 1.549 5.378 0 9.756-4.375 9.76-9.75.002-2.584-1.002-5.01-2.829-6.837C16.291 3.344 13.883 2.341 11.7 2.341 6.327 2.341 1.954 6.716 1.95 12.09c-.001 1.776.471 3.4 1.368 4.974l-1.037 3.79 3.984-1.033zm11.303-7.093c-.3-.149-1.786-.881-2.067-.981-.28-.102-.485-.149-.69.15-.205.299-.79.981-.969 1.18-.179.198-.359.223-.659.074-.3-.149-1.265-.466-2.41-1.487-.89-.793-1.49-1.772-1.664-2.07-.174-.3-.019-.462.13-.61.135-.133.3-.349.45-.523.15-.174.2-.299.3-.499.1-.201.05-.375-.025-.524-.075-.15-.69-1.662-.947-2.285-.25-.601-.504-.519-.69-.529-.179-.008-.385-.01-.59-.01-.206 0-.54.076-.822.384-.282.309-1.077 1.051-1.077 2.563 0 1.512 1.099 2.977 1.248 3.176.15.199 2.164 3.302 5.242 4.63.733.317 1.304.507 1.751.65.736.233 1.408.2 1.94.12.592-.089 1.786-.73 2.037-1.436.25-.706.25-1.312.174-1.436-.075-.124-.28-.198-.58-.348z"/></svg>
+            <div><p class="text-xs font-bold text-green-700">0813-2552-2323</p><p class="text-[10px] text-slate-400">WhatsApp</p></div>
+          </a>
+          <a href="https://wa.me/6281331347721?text=Halo%20PT%20Rins%20Global%20Logistics,%20saya%20ingin%20konsultasi%20pengiriman." target="_blank" class="flex items-center gap-3 bg-green-50 border border-green-100 rounded-lg px-4 py-3 hover:bg-green-100 transition-colors">
+            <svg class="h-4 w-4 fill-green-600 flex-shrink-0" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.063 5.219 5.284.002 11.693.002c3.107 0 6.027 1.213 8.22 3.414 2.194 2.2 3.402 5.122 3.4 8.231-.005 6.466-5.226 11.684-11.636 11.684-2.002-.001-3.973-.518-5.717-1.502L0 24zm6.208-3.79c1.61 1.002 3.197 1.547 4.92 1.549 5.378 0 9.756-4.375 9.76-9.75.002-2.584-1.002-5.01-2.829-6.837C16.291 3.344 13.883 2.341 11.7 2.341 6.327 2.341 1.954 6.716 1.95 12.09c-.001 1.776.471 3.4 1.368 4.974l-1.037 3.79 3.984-1.033zm11.303-7.093c-.3-.149-1.786-.881-2.067-.981-.28-.102-.485-.149-.69.15-.205.299-.79.981-.969 1.18-.179.198-.359.223-.659.074-.3-.149-1.265-.466-2.41-1.487-.89-.793-1.49-1.772-1.664-2.07-.174-.3-.019-.462.13-.61.135-.133.3-.349.45-.523.15-.174.2-.299.3-.499.1-.201.05-.375-.025-.524-.075-.15-.69-1.662-.947-2.285-.25-.601-.504-.519-.69-.529-.179-.008-.385-.01-.59-.01-.206 0-.54.076-.822.384-.282.309-1.077 1.051-1.077 2.563 0 1.512 1.099 2.977 1.248 3.176.15.199 2.164 3.302 5.242 4.63.733.317 1.304.507 1.751.65.736.233 1.408.2 1.94.12.592-.089 1.786-.73 2.037-1.436.25-.706.25-1.312.174-1.436-.075-.124-.28-.198-.58-.348z"/></svg>
+            <div><p class="text-xs font-bold text-green-700">0813-3134-7721</p><p class="text-[10px] text-slate-400">WhatsApp</p></div>
+          </a>
+          <a href="tel:03158288429" class="flex items-center gap-3 bg-blue-50 border border-blue-100 rounded-lg px-4 py-3 hover:bg-blue-100 transition-colors">
+            <svg class="h-4 w-4 text-blue-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            <div><p class="text-xs font-bold text-blue-700">031-58288429</p><p class="text-[10px] text-slate-400">Telepon Kantor</p></div>
+          </a>
+        </div>
       </div>
     </header>
 
@@ -234,14 +284,38 @@
               Anda sampai ke tujuan dengan aman, tepat waktu, dan efisien.
             </p>
             <div class="pt-2 flex flex-col sm:flex-row gap-4">
-              <a
-                href="https://wa.me/6281331347721?text=Halo%20PT%20Rins%20Global%20Logistics,%20saya%20ingin%20mengirim%20barang."
-                target="_blank"
-                class="bg-rgl-orange hover:bg-rgl-orangehover text-white text-center text-sm font-bold px-8 py-4 rounded-lg shadow-lg shadow-orange-500/20 hover:shadow-orange-500/35 transition-all duration-300 transform hover:-translate-y-0.5"
-                id="hero-cta-whatsapp"
-              >
-                Hubungi Kami
-              </a>
+              <!-- Dropdown Hubungi Hero -->
+              <div class="relative" id="hero-dropdown-wrapper">
+                <button
+                  id="hero-cta-whatsapp"
+                  onclick="toggleDropdown('hero-dropdown')"
+                  class="inline-flex items-center gap-2 bg-rgl-orange hover:bg-rgl-orangehover text-white text-center text-sm font-bold px-8 py-4 rounded-lg shadow-lg shadow-orange-500/20 hover:shadow-orange-500/35 transition-all duration-300 transform hover:-translate-y-0.5"
+                >
+                  Hubungi Kami
+                  <svg class="h-4 w-4 transition-transform duration-200" id="hero-dropdown-chevron" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div id="hero-dropdown" class="hidden absolute left-0 mt-2 w-64 bg-white rounded-xl shadow-2xl border border-slate-100 overflow-hidden z-50">
+                  <div class="px-4 py-2 bg-slate-50 border-b border-slate-100">
+                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Pilih Nomor Kontak</p>
+                  </div>
+                  <a href="https://wa.me/6282199994045?text=Halo%20PT%20Rins%20Global%20Logistics,%20saya%20ingin%20mengirim%20barang." target="_blank" class="flex items-center gap-3 px-4 py-3 hover:bg-orange-50 transition-colors group border-b border-slate-50">
+                    <span class="flex-shrink-0 w-7 h-7 rounded-full bg-green-100 flex items-center justify-center"><svg class="h-3.5 w-3.5 fill-green-600" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.063 5.219 5.284.002 11.693.002c3.107 0 6.027 1.213 8.22 3.414 2.194 2.2 3.402 5.122 3.4 8.231-.005 6.466-5.226 11.684-11.636 11.684-2.002-.001-3.973-.518-5.717-1.502L0 24zm6.208-3.79c1.61 1.002 3.197 1.547 4.92 1.549 5.378 0 9.756-4.375 9.76-9.75.002-2.584-1.002-5.01-2.829-6.837C16.291 3.344 13.883 2.341 11.7 2.341 6.327 2.341 1.954 6.716 1.95 12.09c-.001 1.776.471 3.4 1.368 4.974l-1.037 3.79 3.984-1.033zm11.303-7.093c-.3-.149-1.786-.881-2.067-.981-.28-.102-.485-.149-.69.15-.205.299-.79.981-.969 1.18-.179.198-.359.223-.659.074-.3-.149-1.265-.466-2.41-1.487-.89-.793-1.49-1.772-1.664-2.07-.174-.3-.019-.462.13-.61.135-.133.3-.349.45-.523.15-.174.2-.299.3-.499.1-.201.05-.375-.025-.524-.075-.15-.69-1.662-.947-2.285-.25-.601-.504-.519-.69-.529-.179-.008-.385-.01-.59-.01-.206 0-.54.076-.822.384-.282.309-1.077 1.051-1.077 2.563 0 1.512 1.099 2.977 1.248 3.176.15.199 2.164 3.302 5.242 4.63.733.317 1.304.507 1.751.65.736.233 1.408.2 1.94.12.592-.089 1.786-.73 2.037-1.436.25-.706.25-1.312.174-1.436-.075-.124-.28-.198-.58-.348z"/></svg></span>
+                    <div><p class="text-xs font-bold text-slate-700 group-hover:text-rgl-orange transition-colors">0821-9999-4045</p><p class="text-[10px] text-slate-400">WhatsApp</p></div>
+                  </a>
+                  <a href="https://wa.me/6281325522323?text=Halo%20PT%20Rins%20Global%20Logistics,%20saya%20ingin%20mengirim%20barang." target="_blank" class="flex items-center gap-3 px-4 py-3 hover:bg-orange-50 transition-colors group border-b border-slate-50">
+                    <span class="flex-shrink-0 w-7 h-7 rounded-full bg-green-100 flex items-center justify-center"><svg class="h-3.5 w-3.5 fill-green-600" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.063 5.219 5.284.002 11.693.002c3.107 0 6.027 1.213 8.22 3.414 2.194 2.2 3.402 5.122 3.4 8.231-.005 6.466-5.226 11.684-11.636 11.684-2.002-.001-3.973-.518-5.717-1.502L0 24zm6.208-3.79c1.61 1.002 3.197 1.547 4.92 1.549 5.378 0 9.756-4.375 9.76-9.75.002-2.584-1.002-5.01-2.829-6.837C16.291 3.344 13.883 2.341 11.7 2.341 6.327 2.341 1.954 6.716 1.95 12.09c-.001 1.776.471 3.4 1.368 4.974l-1.037 3.79 3.984-1.033zm11.303-7.093c-.3-.149-1.786-.881-2.067-.981-.28-.102-.485-.149-.69.15-.205.299-.79.981-.969 1.18-.179.198-.359.223-.659.074-.3-.149-1.265-.466-2.41-1.487-.89-.793-1.49-1.772-1.664-2.07-.174-.3-.019-.462.13-.61.135-.133.3-.349.45-.523.15-.174.2-.299.3-.499.1-.201.05-.375-.025-.524-.075-.15-.69-1.662-.947-2.285-.25-.601-.504-.519-.69-.529-.179-.008-.385-.01-.59-.01-.206 0-.54.076-.822.384-.282.309-1.077 1.051-1.077 2.563 0 1.512 1.099 2.977 1.248 3.176.15.199 2.164 3.302 5.242 4.63.733.317 1.304.507 1.751.65.736.233 1.408.2 1.94.12.592-.089 1.786-.73 2.037-1.436.25-.706.25-1.312.174-1.436-.075-.124-.28-.198-.58-.348z"/></svg></span>
+                    <div><p class="text-xs font-bold text-slate-700 group-hover:text-rgl-orange transition-colors">0813-2552-2323</p><p class="text-[10px] text-slate-400">WhatsApp</p></div>
+                  </a>
+                  <a href="https://wa.me/6281331347721?text=Halo%20PT%20Rins%20Global%20Logistics,%20saya%20ingin%20mengirim%20barang." target="_blank" class="flex items-center gap-3 px-4 py-3 hover:bg-orange-50 transition-colors group border-b border-slate-50">
+                    <span class="flex-shrink-0 w-7 h-7 rounded-full bg-green-100 flex items-center justify-center"><svg class="h-3.5 w-3.5 fill-green-600" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.063 5.219 5.284.002 11.693.002c3.107 0 6.027 1.213 8.22 3.414 2.194 2.2 3.402 5.122 3.4 8.231-.005 6.466-5.226 11.684-11.636 11.684-2.002-.001-3.973-.518-5.717-1.502L0 24zm6.208-3.79c1.61 1.002 3.197 1.547 4.92 1.549 5.378 0 9.756-4.375 9.76-9.75.002-2.584-1.002-5.01-2.829-6.837C16.291 3.344 13.883 2.341 11.7 2.341 6.327 2.341 1.954 6.716 1.95 12.09c-.001 1.776.471 3.4 1.368 4.974l-1.037 3.79 3.984-1.033zm11.303-7.093c-.3-.149-1.786-.881-2.067-.981-.28-.102-.485-.149-.69.15-.205.299-.79.981-.969 1.18-.179.198-.359.223-.659.074-.3-.149-1.265-.466-2.41-1.487-.89-.793-1.49-1.772-1.664-2.07-.174-.3-.019-.462.13-.61.135-.133.3-.349.45-.523.15-.174.2-.299.3-.499.1-.201.05-.375-.025-.524-.075-.15-.69-1.662-.947-2.285-.25-.601-.504-.519-.69-.529-.179-.008-.385-.01-.59-.01-.206 0-.54.076-.822.384-.282.309-1.077 1.051-1.077 2.563 0 1.512 1.099 2.977 1.248 3.176.15.199 2.164 3.302 5.242 4.63.733.317 1.304.507 1.751.65.736.233 1.408.2 1.94.12.592-.089 1.786-.73 2.037-1.436.25-.706.25-1.312.174-1.436-.075-.124-.28-.198-.58-.348z"/></svg></span>
+                    <div><p class="text-xs font-bold text-slate-700 group-hover:text-rgl-orange transition-colors">0813-3134-7721</p><p class="text-[10px] text-slate-400">WhatsApp</p></div>
+                  </a>
+                  <a href="tel:03158288429" class="flex items-center gap-3 px-4 py-3 hover:bg-orange-50 transition-colors group">
+                    <span class="flex-shrink-0 w-7 h-7 rounded-full bg-blue-100 flex items-center justify-center"><svg class="h-3.5 w-3.5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg></span>
+                    <div><p class="text-xs font-bold text-slate-700 group-hover:text-rgl-orange transition-colors">031-58288429</p><p class="text-[10px] text-slate-400">Telepon Kantor</p></div>
+                  </a>
+                </div>
+              </div>
               <a
                 href="#layanan"
                 class="bg-white/10 hover:bg-white/20 border border-white/25 text-white text-center text-sm font-bold px-8 py-4 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5"
@@ -896,22 +970,40 @@
                 retail hingga volume besar.
               </p>
 
-              <!-- Direct WhatsApp Button -->
+              <!-- Dropdown Hubungi CTA Section -->
               <div class="pt-2">
-                <a
-                  href="https://wa.me/6281235539954?text=Halo%20PT%20Rins%20Global%20Logistics,%20saya%20ingin%20mendapatkan%20penawaran%20harga%20pengiriman."
-                  target="_blank"
-                  class="inline-flex items-center gap-3 bg-rgl-orange hover:bg-rgl-orangehover text-white text-sm font-bold px-8 py-4 rounded-lg shadow-lg shadow-orange-500/25 transition-all duration-300 transform hover:-translate-y-0.5"
-                  id="footer-cta-whatsapp"
-                >
-                  <!-- WhatsApp Icon SVG -->
-                  <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24">
-                    <path
-                      d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.063 5.219 5.284.002 11.693.002c3.107 0 6.027 1.213 8.22 3.414 2.194 2.2 3.402 5.122 3.4 8.231-.005 6.466-5.226 11.684-11.636 11.684-2.002-.001-3.973-.518-5.717-1.502L0 24zm6.208-3.79c1.61 1.002 3.197 1.547 4.92 1.549 5.378 0 9.756-4.375 9.76-9.75.002-2.584-1.002-5.01-2.829-6.837C16.291 3.344 13.883 2.341 11.7 2.341 6.327 2.341 1.954 6.716 1.95 12.09c-.001 1.776.471 3.4 1.368 4.974l-1.037 3.79 3.984-1.033zm11.303-7.093c-.3-.149-1.786-.881-2.067-.981-.28-.102-.485-.149-.69.15-.205.299-.79.981-.969 1.18-.179.198-.359.223-.659.074-.3-.149-1.265-.466-2.41-1.487-.89-.793-1.49-1.772-1.664-2.07-.174-.3-.019-.462.13-.61.135-.133.3-.349.45-.523.15-.174.2-.299.3-.499.1-.201.05-.375-.025-.524-.075-.15-.69-1.662-.947-2.285-.25-.601-.504-.519-.69-.529-.179-.008-.385-.01-.59-.01-.206 0-.54.076-.822.384-.282.309-1.077 1.051-1.077 2.563 0 1.512 1.099 2.977 1.248 3.176.15.199 2.164 3.302 5.242 4.63.733.317 1.304.507 1.751.65.736.233 1.408.2 1.94.12.592-.089 1.786-.73 2.037-1.436.25-.706.25-1.312.174-1.436-.075-.124-.28-.198-.58-.348z"
-                    />
-                  </svg>
-                  <span>Minta Penawaran via WhatsApp</span>
-                </a>
+                <div class="relative" id="cta-dropdown-wrapper">
+                  <button
+                    id="footer-cta-whatsapp"
+                    onclick="toggleDropdown('cta-dropdown')"
+                    class="inline-flex items-center gap-3 bg-rgl-orange hover:bg-rgl-orangehover text-white text-sm font-bold px-8 py-4 rounded-lg shadow-lg shadow-orange-500/25 transition-all duration-300 transform hover:-translate-y-0.5"
+                  >
+                    <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.063 5.219 5.284.002 11.693.002c3.107 0 6.027 1.213 8.22 3.414 2.194 2.2 3.402 5.122 3.4 8.231-.005 6.466-5.226 11.684-11.636 11.684-2.002-.001-3.973-.518-5.717-1.502L0 24zm6.208-3.79c1.61 1.002 3.197 1.547 4.92 1.549 5.378 0 9.756-4.375 9.76-9.75.002-2.584-1.002-5.01-2.829-6.837C16.291 3.344 13.883 2.341 11.7 2.341 6.327 2.341 1.954 6.716 1.95 12.09c-.001 1.776.471 3.4 1.368 4.974l-1.037 3.79 3.984-1.033zm11.303-7.093c-.3-.149-1.786-.881-2.067-.981-.28-.102-.485-.149-.69.15-.205.299-.79.981-.969 1.18-.179.198-.359.223-.659.074-.3-.149-1.265-.466-2.41-1.487-.89-.793-1.49-1.772-1.664-2.07-.174-.3-.019-.462.13-.61.135-.133.3-.349.45-.523.15-.174.2-.299.3-.499.1-.201.05-.375-.025-.524-.075-.15-.69-1.662-.947-2.285-.25-.601-.504-.519-.69-.529-.179-.008-.385-.01-.59-.01-.206 0-.54.076-.822.384-.282.309-1.077 1.051-1.077 2.563 0 1.512 1.099 2.977 1.248 3.176.15.199 2.164 3.302 5.242 4.63.733.317 1.304.507 1.751.65.736.233 1.408.2 1.94.12.592-.089 1.786-.73 2.037-1.436.25-.706.25-1.312.174-1.436-.075-.124-.28-.198-.58-.348z"/></svg>
+                    <span>Minta Penawaran via WhatsApp</span>
+                    <svg class="h-4 w-4 transition-transform duration-200" id="cta-dropdown-chevron" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+                  </button>
+                  <div id="cta-dropdown" class="hidden absolute left-0 mt-2 w-64 bg-white rounded-xl shadow-2xl border border-slate-100 overflow-hidden z-50">
+                    <div class="px-4 py-2 bg-slate-50 border-b border-slate-100">
+                      <p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Pilih Nomor Kontak</p>
+                    </div>
+                    <a href="https://wa.me/6282199994045?text=Halo%20PT%20Rins%20Global%20Logistics,%20saya%20ingin%20mendapatkan%20penawaran%20harga%20pengiriman." target="_blank" class="flex items-center gap-3 px-4 py-3 hover:bg-orange-50 transition-colors group border-b border-slate-50">
+                      <span class="flex-shrink-0 w-7 h-7 rounded-full bg-green-100 flex items-center justify-center"><svg class="h-3.5 w-3.5 fill-green-600" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.063 5.219 5.284.002 11.693.002c3.107 0 6.027 1.213 8.22 3.414 2.194 2.2 3.402 5.122 3.4 8.231-.005 6.466-5.226 11.684-11.636 11.684-2.002-.001-3.973-.518-5.717-1.502L0 24zm6.208-3.79c1.61 1.002 3.197 1.547 4.92 1.549 5.378 0 9.756-4.375 9.76-9.75.002-2.584-1.002-5.01-2.829-6.837C16.291 3.344 13.883 2.341 11.7 2.341 6.327 2.341 1.954 6.716 1.95 12.09c-.001 1.776.471 3.4 1.368 4.974l-1.037 3.79 3.984-1.033zm11.303-7.093c-.3-.149-1.786-.881-2.067-.981-.28-.102-.485-.149-.69.15-.205.299-.79.981-.969 1.18-.179.198-.359.223-.659.074-.3-.149-1.265-.466-2.41-1.487-.89-.793-1.49-1.772-1.664-2.07-.174-.3-.019-.462.13-.61.135-.133.3-.349.45-.523.15-.174.2-.299.3-.499.1-.201.05-.375-.025-.524-.075-.15-.69-1.662-.947-2.285-.25-.601-.504-.519-.69-.529-.179-.008-.385-.01-.59-.01-.206 0-.54.076-.822.384-.282.309-1.077 1.051-1.077 2.563 0 1.512 1.099 2.977 1.248 3.176.15.199 2.164 3.302 5.242 4.63.733.317 1.304.507 1.751.65.736.233 1.408.2 1.94.12.592-.089 1.786-.73 2.037-1.436.25-.706.25-1.312.174-1.436-.075-.124-.28-.198-.58-.348z"/></svg></span>
+                      <div><p class="text-xs font-bold text-slate-700 group-hover:text-rgl-orange transition-colors">0821-9999-4045</p><p class="text-[10px] text-slate-400">WhatsApp</p></div>
+                    </a>
+                    <a href="https://wa.me/6281325522323?text=Halo%20PT%20Rins%20Global%20Logistics,%20saya%20ingin%20mendapatkan%20penawaran%20harga%20pengiriman." target="_blank" class="flex items-center gap-3 px-4 py-3 hover:bg-orange-50 transition-colors group border-b border-slate-50">
+                      <span class="flex-shrink-0 w-7 h-7 rounded-full bg-green-100 flex items-center justify-center"><svg class="h-3.5 w-3.5 fill-green-600" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.063 5.219 5.284.002 11.693.002c3.107 0 6.027 1.213 8.22 3.414 2.194 2.2 3.402 5.122 3.4 8.231-.005 6.466-5.226 11.684-11.636 11.684-2.002-.001-3.973-.518-5.717-1.502L0 24zm6.208-3.79c1.61 1.002 3.197 1.547 4.92 1.549 5.378 0 9.756-4.375 9.76-9.75.002-2.584-1.002-5.01-2.829-6.837C16.291 3.344 13.883 2.341 11.7 2.341 6.327 2.341 1.954 6.716 1.95 12.09c-.001 1.776.471 3.4 1.368 4.974l-1.037 3.79 3.984-1.033zm11.303-7.093c-.3-.149-1.786-.881-2.067-.981-.28-.102-.485-.149-.69.15-.205.299-.79.981-.969 1.18-.179.198-.359.223-.659.074-.3-.149-1.265-.466-2.41-1.487-.89-.793-1.49-1.772-1.664-2.07-.174-.3-.019-.462.13-.61.135-.133.3-.349.45-.523.15-.174.2-.299.3-.499.1-.201.05-.375-.025-.524-.075-.15-.69-1.662-.947-2.285-.25-.601-.504-.519-.69-.529-.179-.008-.385-.01-.59-.01-.206 0-.54.076-.822.384-.282.309-1.077 1.051-1.077 2.563 0 1.512 1.099 2.977 1.248 3.176.15.199 2.164 3.302 5.242 4.63.733.317 1.304.507 1.751.65.736.233 1.408.2 1.94.12.592-.089 1.786-.73 2.037-1.436.25-.706.25-1.312.174-1.436-.075-.124-.28-.198-.58-.348z"/></svg></span>
+                      <div><p class="text-xs font-bold text-slate-700 group-hover:text-rgl-orange transition-colors">0813-2552-2323</p><p class="text-[10px] text-slate-400">WhatsApp</p></div>
+                    </a>
+                    <a href="https://wa.me/6281331347721?text=Halo%20PT%20Rins%20Global%20Logistics,%20saya%20ingin%20mendapatkan%20penawaran%20harga%20pengiriman." target="_blank" class="flex items-center gap-3 px-4 py-3 hover:bg-orange-50 transition-colors group border-b border-slate-50">
+                      <span class="flex-shrink-0 w-7 h-7 rounded-full bg-green-100 flex items-center justify-center"><svg class="h-3.5 w-3.5 fill-green-600" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.063 5.219 5.284.002 11.693.002c3.107 0 6.027 1.213 8.22 3.414 2.194 2.2 3.402 5.122 3.4 8.231-.005 6.466-5.226 11.684-11.636 11.684-2.002-.001-3.973-.518-5.717-1.502L0 24zm6.208-3.79c1.61 1.002 3.197 1.547 4.92 1.549 5.378 0 9.756-4.375 9.76-9.75.002-2.584-1.002-5.01-2.829-6.837C16.291 3.344 13.883 2.341 11.7 2.341 6.327 2.341 1.954 6.716 1.95 12.09c-.001 1.776.471 3.4 1.368 4.974l-1.037 3.79 3.984-1.033zm11.303-7.093c-.3-.149-1.786-.881-2.067-.981-.28-.102-.485-.149-.69.15-.205.299-.79.981-.969 1.18-.179.198-.359.223-.659.074-.3-.149-1.265-.466-2.41-1.487-.89-.793-1.49-1.772-1.664-2.07-.174-.3-.019-.462.13-.61.135-.133.3-.349.45-.523.15-.174.2-.299.3-.499.1-.201.05-.375-.025-.524-.075-.15-.69-1.662-.947-2.285-.25-.601-.504-.519-.69-.529-.179-.008-.385-.01-.59-.01-.206 0-.54.076-.822.384-.282.309-1.077 1.051-1.077 2.563 0 1.512 1.099 2.977 1.248 3.176.15.199 2.164 3.302 5.242 4.63.733.317 1.304.507 1.751.65.736.233 1.408.2 1.94.12.592-.089 1.786-.73 2.037-1.436.25-.706.25-1.312.174-1.436-.075-.124-.28-.198-.58-.348z"/></svg></span>
+                      <div><p class="text-xs font-bold text-slate-700 group-hover:text-rgl-orange transition-colors">0813-3134-7721</p><p class="text-[10px] text-slate-400">WhatsApp</p></div>
+                    </a>
+                    <a href="tel:03158288429" class="flex items-center gap-3 px-4 py-3 hover:bg-orange-50 transition-colors group">
+                      <span class="flex-shrink-0 w-7 h-7 rounded-full bg-blue-100 flex items-center justify-center"><svg class="h-3.5 w-3.5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg></span>
+                      <div><p class="text-xs font-bold text-slate-700 group-hover:text-rgl-orange transition-colors">031-58288429</p><p class="text-[10px] text-slate-400">Telepon Kantor</p></div>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -1019,18 +1111,31 @@
                     >WhatsApp / Hotline</span
                   >
                   <a
-                    href="https://wa.me/6281235539954?text=Halo%20PT%20Rins%20Global%20Logistics"
+                    href="https://wa.me/6282199994045?text=Halo%20PT%20Rins%20Global%20Logistics"
                     target="_blank"
                     class="text-xs text-slate-300 hover:text-rgl-orange transition mt-1 block font-semibold"
                   >
-                    +62 812-3553-9954
+                    0821-9999-4045
+                  </a>
+                  <a
+                    href="https://wa.me/6281325522323?text=Halo%20PT%20Rins%20Global%20Logistics"
+                    target="_blank"
+                    class="text-xs text-slate-300 hover:text-rgl-orange transition mt-1 block font-semibold"
+                  >
+                    0813-2552-2323
                   </a>
                   <a
                     href="https://wa.me/6281331347721?text=Halo%20PT%20Rins%20Global%20Logistics"
                     target="_blank"
                     class="text-xs text-slate-300 hover:text-rgl-orange transition mt-1 block font-semibold"
                   >
-                    +62 813-3134-7721
+                    0813-3134-7721
+                  </a>
+                  <a
+                    href="tel:03158288429"
+                    class="text-xs text-slate-300 hover:text-rgl-orange transition mt-1 block font-semibold"
+                  >
+                    031-58288429 (Kantor)
                   </a>
                 </div>
               </div>
@@ -1082,12 +1187,54 @@
         mobileMenu.classList.toggle("hidden");
       });
 
-      // Close mobile menu on clicking any links
-      const links = mobileMenu.querySelectorAll("a");
+      // Close mobile menu on clicking any links (exclude contact list links so dropdown stays open)
+      const links = mobileMenu.querySelectorAll("a:not(#mobile-contact-list a)");
       links.forEach((link) => {
         link.addEventListener("click", () => {
           mobileMenu.classList.add("hidden");
         });
+      });
+    </script>
+
+    <!-- Dropdown Toggle Script -->
+    <script>
+      const dropdownIds = ['nav-dropdown', 'hero-dropdown', 'cta-dropdown'];
+
+      function toggleDropdown(id) {
+        const dropdown = document.getElementById(id);
+        const isHidden = dropdown.classList.contains('hidden');
+
+        // Close all dropdowns first
+        dropdownIds.forEach(function(did) {
+          const el = document.getElementById(did);
+          if (el) el.classList.add('hidden');
+          const chevron = document.getElementById(did.replace('-dropdown', '-dropdown-chevron'));
+          if (chevron) chevron.style.transform = '';
+        });
+
+        // Open clicked one if it was closed
+        if (isHidden) {
+          dropdown.classList.remove('hidden');
+          const chevron = document.getElementById(id.replace('-dropdown', '-dropdown-chevron'));
+          if (chevron) chevron.style.transform = 'rotate(180deg)';
+        }
+      }
+
+      // Close dropdowns on outside click
+      document.addEventListener('click', function(e) {
+        const wrapperIds = ['nav-dropdown-wrapper', 'hero-dropdown-wrapper', 'cta-dropdown-wrapper'];
+        const clickedInsideWrapper = wrapperIds.some(function(wid) {
+          const el = document.getElementById(wid);
+          return el && el.contains(e.target);
+        });
+        if (!clickedInsideWrapper) {
+          dropdownIds.forEach(function(did) {
+            const el = document.getElementById(did);
+            if (el) el.classList.add('hidden');
+            const chevron = document.getElementById(did.replace('-dropdown', '-dropdown-chevron'));
+            if (chevron) chevron.style.transform = '';
+          });
+        }
       });
     </script>
   </body>
