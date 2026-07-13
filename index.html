@@ -627,162 +627,231 @@
           </div>
 
           <!-- History and Core Values Grid -->
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-            <!-- Short History -->
-            <div class="lg:col-span-7 space-y-6">
-              <h3
-                class="text-2xl font-bold font-jakarta text-rgl-navy flex items-center gap-2"
-              >
-                <span class="w-1.5 h-6 bg-rgl-orange rounded"></span>
-                Sejarah Singkat
-              </h3>
-              <p
-                class="text-slate-600 text-sm sm:text-base leading-relaxed text-justify"
-              >
-                Berawal dari komitmen untuk menjembatani kesenjangan distribusi
-                barang di Indonesia,
-                <strong>PT Rins Global Logistics</strong> didirikan dengan visi
-                menjadi perusahaan logistik terdepan dan terpercaya. Berbekal
-                pengalaman bertahun-tahun di industri ini, kami terus berinovasi
-                dan memperluas jaringan armada demi memberikan layanan
-                pengiriman yang lancar, transparan, dan terukur bagi seluruh
-                pelaku bisnis, mulai dari skala retail hingga korporasi besar.
-              </p>
-
-              <!-- Color Code/Brand board snippet -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:items-stretch">
+            <!-- LEFT: Armada Brand Photo -->
+            <div class="lg:col-span-5 flex">
               <div
-                class="p-5 bg-rgl-lightbg border border-slate-200/60 rounded-xl space-y-3"
+                class="relative group overflow-hidden rounded-2xl shadow-xl ring-1 ring-slate-200/60 w-full"
               >
-                <span
-                  class="text-[11px] font-bold text-slate-400 uppercase tracking-wider block"
-                  >Filosofi Identitas Visual</span
+                <img
+                  src="armada-rgl.jpeg"
+                  alt="Armada berbranding PT Rins Global Logistics"
+                  width="800"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                />
+                <!-- Subtle navy tint overlay at the bottom -->
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-rgl-navy/60 via-transparent to-transparent pointer-events-none"
+                ></div>
+                <!-- Floating badge -->
+                <div
+                  class="absolute bottom-4 left-4 right-4 flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl px-4 py-2.5"
                 >
-                <p class="text-slate-500 text-[11px] leading-relaxed">
-                  Monogram logo <strong>RGL</strong> memadukan siluet elang
-                  tajam yang melambangkan <strong>Ketangguhan</strong> armada,
-                  <strong>Ketelitian</strong> administrasi, dan
-                  <strong>Kecepatan</strong> estimasi waktu tiba (ETA).
-                </p>
-                <div class="flex gap-4 text-xs font-semibold">
-                  <div class="flex items-center gap-2">
-                    <span
-                      class="w-3.5 h-3.5 bg-[#1D2E54] rounded-sm border border-slate-300"
-                    ></span>
-                    <span class="text-slate-700"
-                      >Navy Blue (Stabilitas & Trust)</span
-                    >
-                  </div>
-                  <div class="flex items-center gap-2">
-                    <span
-                      class="w-3.5 h-3.5 bg-[#D26E20] rounded-sm border border-slate-300"
-                    ></span>
-                    <span class="text-slate-700"
-                      >Orange (Energi & Inovasi)</span
-                    >
-                  </div>
+                  <svg
+                    class="h-4 w-4 text-rgl-orange flex-shrink-0"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                    />
+                  </svg>
+                  <span class="text-white text-[11px] font-bold leading-tight"
+                    >Armada Berbranding &amp; Terverifikasi</span
+                  >
                 </div>
               </div>
             </div>
 
-            <!-- Why Choose Us -->
-            <div
-              class="lg:col-span-5 bg-rgl-lightbg border border-slate-100 rounded-2xl p-8 space-y-6 shadow-sm"
-            >
-              <h3 class="text-xl font-bold font-jakarta text-rgl-navy">
-                Mengapa Memilih Kami?
-              </h3>
+            <!-- RIGHT: History + Why Choose Us -->
+            <div class="lg:col-span-7 space-y-8">
+              <!-- Sejarah Singkat -->
+              <div class="space-y-4">
+                <h3
+                  class="text-2xl font-bold font-jakarta text-rgl-navy flex items-center gap-2"
+                >
+                  <span class="w-1.5 h-6 bg-rgl-orange rounded"></span>
+                  Sejarah Singkat
+                </h3>
+                <p
+                  class="text-slate-600 text-sm sm:text-base leading-relaxed text-justify"
+                >
+                  Berawal dari komitmen untuk menjembatani kesenjangan
+                  distribusi barang di Indonesia,
+                  <strong>PT Rins Global Logistics</strong> didirikan dengan
+                  visi menjadi perusahaan logistik terdepan dan terpercaya.
+                  Berbekal pengalaman bertahun-tahun di industri ini, kami terus
+                  berinovasi dan memperluas jaringan armada demi memberikan
+                  layanan pengiriman yang lancar, transparan, dan terukur bagi
+                  seluruh pelaku bisnis, mulai dari skala retail hingga
+                  korporasi besar.
+                </p>
 
-              <div class="space-y-6">
-                <!-- Value 1 -->
-                <div class="flex gap-4">
-                  <div
-                    class="flex-shrink-0 w-10 h-10 bg-white rounded-lg flex items-center justify-center text-rgl-orange shadow-sm"
+                <!-- Brand Identity Snippet -->
+                <div
+                  class="p-5 bg-rgl-lightbg border border-slate-200/60 rounded-xl space-y-3"
+                >
+                  <span
+                    class="text-[11px] font-bold text-slate-400 uppercase tracking-wider block"
+                    >Filosofi Identitas Visual</span
                   >
-                    <!-- Globe Icon SVG -->
-                    <svg
-                      class="h-6 w-6"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 002 2h2m0 0l-3-3m3 3l-3 3M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 class="font-bold text-sm text-rgl-navy font-jakarta">
-                      Jangkauan Nasional
-                    </h4>
-                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">
-                      Melayani pengiriman ke seluruh wilayah Indonesia melalui
-                      multimoda Darat, Laut, dan Udara.
-                    </p>
+                  <p class="text-slate-500 text-[11px] leading-relaxed">
+                    Monogram logo <strong>RGL</strong> memadukan siluet elang
+                    tajam yang melambangkan <strong>Ketangguhan</strong> armada,
+                    <strong>Ketelitian</strong> administrasi, dan
+                    <strong>Kecepatan</strong> estimasi waktu tiba (ETA).
+                  </p>
+                  <div class="flex gap-4 text-xs font-semibold">
+                    <div class="flex items-center gap-2">
+                      <span
+                        class="w-3.5 h-3.5 bg-[#1D2E54] rounded-sm border border-slate-300"
+                      ></span>
+                      <span class="text-slate-700"
+                        >Navy Blue (Stabilitas &amp; Trust)</span
+                      >
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <span
+                        class="w-3.5 h-3.5 bg-[#D26E20] rounded-sm border border-slate-300"
+                      ></span>
+                      <span class="text-slate-700"
+                        >Orange (Energi &amp; Inovasi)</span
+                      >
+                    </div>
                   </div>
                 </div>
+              </div>
 
-                <!-- Value 2 -->
-                <div class="flex gap-4">
-                  <div
-                    class="flex-shrink-0 w-10 h-10 bg-white rounded-lg flex items-center justify-center text-rgl-orange shadow-sm"
-                  >
-                    <!-- Shield Icon SVG -->
-                    <svg
-                      class="h-6 w-6"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
+              <!-- Mengapa Memilih Kami -->
+              <div
+                class="bg-rgl-lightbg border border-slate-100 rounded-2xl p-7 space-y-5 shadow-sm"
+              >
+                <h3 class="text-xl font-bold font-jakarta text-rgl-navy">
+                  Mengapa Memilih Kami?
+                </h3>
+                <div class="grid sm:grid-cols-2 gap-5">
+                  <!-- Value 1 -->
+                  <div class="flex gap-3">
+                    <div
+                      class="flex-shrink-0 w-9 h-9 bg-white rounded-lg flex items-center justify-center text-rgl-orange shadow-sm"
                     >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                      />
-                    </svg>
+                      <svg
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 002 2h2m0 0l-3-3m3 3l-3 3M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-sm text-rgl-navy font-jakarta">
+                        Jangkauan Nasional
+                      </h4>
+                      <p class="text-xs text-slate-500 mt-1 leading-relaxed">
+                        Melayani ke seluruh wilayah Indonesia via multimoda
+                        Darat, Laut, dan Udara.
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <h4 class="font-bold text-sm text-rgl-navy font-jakarta">
-                      Keamanan Terjamin
-                    </h4>
-                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">
-                      Standardisasi pengemasan profesional dan penanganan cargo
-                      fisik yang ketat di setiap rute.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Value 3 -->
-                <div class="flex gap-4">
-                  <div
-                    class="flex-shrink-0 w-10 h-10 bg-white rounded-lg flex items-center justify-center text-rgl-orange shadow-sm"
-                  >
-                    <!-- Clock Icon SVG -->
-                    <svg
-                      class="h-6 w-6"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
+                  <!-- Value 2 -->
+                  <div class="flex gap-3">
+                    <div
+                      class="flex-shrink-0 w-9 h-9 bg-white rounded-lg flex items-center justify-center text-rgl-orange shadow-sm"
                     >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
+                      <svg
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                        />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-sm text-rgl-navy font-jakarta">
+                        Keamanan Terjamin
+                      </h4>
+                      <p class="text-xs text-slate-500 mt-1 leading-relaxed">
+                        Standardisasi pengemasan profesional dan penanganan
+                        cargo yang ketat.
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <h4 class="font-bold text-sm text-rgl-navy font-jakarta">
-                      Tepat Waktu
-                    </h4>
-                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">
-                      Manajemen rute digital optimal demi efisiensi estimasi
-                      waktu kedatangan kargo (ETA).
-                    </p>
+                  <!-- Value 3 -->
+                  <div class="flex gap-3">
+                    <div
+                      class="flex-shrink-0 w-9 h-9 bg-white rounded-lg flex items-center justify-center text-rgl-orange shadow-sm"
+                    >
+                      <svg
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-sm text-rgl-navy font-jakarta">
+                        Tepat Waktu
+                      </h4>
+                      <p class="text-xs text-slate-500 mt-1 leading-relaxed">
+                        Manajemen rute digital optimal demi efisiensi ETA kargo
+                        Anda.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Value 4 -->
+                  <div class="flex gap-3">
+                    <div
+                      class="flex-shrink-0 w-9 h-9 bg-white rounded-lg flex items-center justify-center text-rgl-orange shadow-sm"
+                    >
+                      <svg
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"
+                        />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-sm text-rgl-navy font-jakarta">
+                        Tim Berpengalaman
+                      </h4>
+                      <p class="text-xs text-slate-500 mt-1 leading-relaxed">
+                        Didukung tim logistik profesional yang siap konsultasi
+                        24/7.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1191,10 +1260,10 @@
                 <p
                   class="text-slate-500 text-xs sm:text-sm leading-relaxed flex-grow"
                 >
-                  Lokomotif logistik utama untuk pengiriman kargo curah,
-                  logistik megaproyek, infrastruktur, serta intermodal kontainer
-                  laut ukuran 20ft dan 40ft dengan jaminan stabilitas muatan
-                  berat luar biasa.
+                  Otomotif logistik utama untuk pengiriman kargo curah, logistik
+                  megaproyek, infrastruktur, serta intermodal kontainer laut
+                  ukuran 20ft dan 40ft dengan jaminan stabilitas muatan berat
+                  luar biasa.
                 </p>
               </div>
             </div>
